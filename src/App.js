@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import HandleName from './profile/profile';
+import raed from "./raed.jpg" ; 
 
+
+const styleobject = {  width:" 50%" , height : "50%" } ; 
 function App() {
+  const alertName = (name,bio,profession) => {
+   alert(name) 
+
+   
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HandleName alertName={alertName} > <img style={styleobject}  src={raed} />  </HandleName>
     </div>
   );
 }
